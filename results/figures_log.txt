@@ -1,0 +1,209 @@
+=== Building accuracy table ===
+  Saved table_accuracy.csv
+
+=== Accuracy Table ===
+method                       fixed_pikan             mlp_pinn             ra_pikan             rad_pinn        uniform_pikan
+benchmark  param                                                                                                            
+Adv-Diff   Pe=100.0  5.543e+00 ± 2.0e+00  4.097e+00 ± 1.8e+00  3.020e+00 ± 3.2e-01  3.827e+00 ± 1.4e+00  2.655e+00 ± 6.6e-02
+           Pe=500.0  5.541e+00 ± 2.1e+00  6.213e+00 ± 5.6e-02  2.794e+00 ± 8.4e-02  6.164e+00 ± 2.7e-02  2.754e+00 ± 2.4e-02
+Allen-Cahn eps=0.05  9.020e-03 ± 9.0e-04  1.165e-01 ± 5.1e-02  1.592e-02 ± 1.0e-02  1.073e-02 ± 2.9e-03  1.504e-03 ± 2.3e-04
+           eps=0.1   5.583e-03 ± 4.9e-04  8.848e-02 ± 4.0e-02  3.247e-02 ± 1.8e-02  5.944e-03 ± 2.2e-03  1.188e-03 ± 1.3e-04
+Burgers    nu=0.001  3.303e-01 ± 7.9e-03  3.562e-01 ± 6.1e-03  4.220e-01 ± 4.1e-02  2.918e-01 ± 9.7e-02  3.030e-01 ± 5.1e-02
+           nu=0.005  1.473e-01 ± 2.8e-02  2.720e-01 ± 1.3e-02  3.988e-01 ± 4.4e-02  6.622e-02 ± 3.6e-02  2.969e-01 ± 7.3e-02
+           nu=0.01   5.597e-02 ± 4.9e-03  1.240e-01 ± 1.9e-02  3.454e-01 ± 9.7e-02  2.123e-02 ± 1.0e-02  3.053e-01 ± 9.4e-02
+Duffing    symbolic  7.747e-01 ± 1.5e-03  6.701e-01 ± 3.0e-02  7.730e-01 ± 4.5e-04  5.574e-01 ± 2.2e-02  1.266e-01 ± 1.4e-01
+
+=== Building compute table ===
+  Saved table_compute.csv
+
+=== Convergence plots ===
+  Saved fig_convergence_burgers_nu0.01.pdf
+  Saved fig_l2cycle_burgers_nu0.01.pdf
+  Saved fig_convergence_burgers_nu0.005.pdf
+  Saved fig_l2cycle_burgers_nu0.005.pdf
+  Saved fig_convergence_burgers_nu0.001.pdf
+  Saved fig_l2cycle_burgers_nu0.001.pdf
+  Saved fig_convergence_ac_eps0.1.pdf
+  Saved fig_l2cycle_ac_eps0.1.pdf
+  Saved fig_convergence_ac_eps0.05.pdf
+  Saved fig_l2cycle_ac_eps0.05.pdf
+  Saved fig_convergence_ad_Pe100.0.pdf
+  Saved fig_l2cycle_ad_Pe100.0.pdf
+  Saved fig_convergence_ad_Pe500.0.pdf
+  Saved fig_l2cycle_ad_Pe500.0.pdf
+
+=== Bar charts ===
+  Saved fig_bar_burgers.pdf
+  Saved fig_bar_allen_cahn.pdf
+  Saved fig_bar_adv_diff.pdf
+
+=== Symbolic extraction ===
+
+=== Symbolic Extraction (R² >= 0.90) ===
+     method  seed  layer                                  formula       r2
+fixed_pikan   123      0   0.0340*x^3 + 2.1380*sin + -2.1770*tanh 0.910288
+fixed_pikan   123      0   0.1459*x^2 + 0.0327*x^3 + -0.2405*sqrt 0.900736
+fixed_pikan   123      0   0.1233*x^3 + -0.3464*exp + 0.6306*sqrt 0.937414
+fixed_pikan   123      0  -0.0083*x^4 + -0.1605*cos + 0.1836*sqrt 0.974537
+fixed_pikan   123      1     -0.2983*1 + 0.0302*x^3 + 0.2715*sqrt 0.935432
+fixed_pikan   123      1     -0.6810*1 + -0.1738*sin + 0.1611*cos 0.902635
+fixed_pikan   123      1    -0.2197*sin + 0.2727*cos + 0.0351*exp 0.945190
+fixed_pikan   123      1  0.1543*x^2 + -0.1849*sin + -0.5903*sqrt 0.962456
+fixed_pikan   123      1    -0.1783*1 + 0.1075*exp + -0.2637*tanh 0.929369
+fixed_pikan   123      1     -0.4316*x + 0.1061*exp + 0.7003*tanh 0.950624
+fixed_pikan   123      1     -0.2092*x + 0.0205*x^2 + 0.4511*tanh 0.958900
+fixed_pikan   123      1     0.2923*1 + -1.5875*sin + 1.4514*tanh 0.916154
+fixed_pikan   123      1     -0.0922*1 + 0.3202*sin + -0.0826*exp 0.930574
+fixed_pikan   123      1    -0.0137*x + -0.0932*cos + 0.1198*sqrt 0.978973
+fixed_pikan   123      1    -0.0631*x + 0.1067*x^2 + -0.2112*sqrt 0.946278
+fixed_pikan    42      0      -0.7004*x + 1.0626*sin + 0.0990*exp 0.960145
+fixed_pikan    42      0    0.3342*x + 0.1359*sqrt + -0.4220*tanh 0.922820
+fixed_pikan    42      0   0.1274*x^2 + 0.0135*x^3 + -0.0485*sqrt 0.933756
+fixed_pikan    42      0    0.0944*x + -0.2566*sin + -0.0493*sqrt 0.969461
+fixed_pikan    42      1  0.1788*sin + -0.4855*cos + -0.3693*sqrt 0.939390
+fixed_pikan    42      1   -0.1244*sin + 0.1170*cos + 0.3670*sqrt 0.928317
+fixed_pikan    42      1   0.1431*x^2 + 0.2893*cos + -0.4413*sqrt 0.966296
+fixed_pikan    42      1     0.4949*x + 0.0957*x^2 + -0.9592*tanh 0.949883
+fixed_pikan    42      1    -1.1734*1 + -0.0258*exp + 0.2188*sqrt 0.925143
+fixed_pikan    42      1   0.1218*cos + -0.0667*exp + 0.2441*tanh 0.966507
+fixed_pikan    42      1     0.4904*1 + 0.0229*exp + -0.5115*sqrt 0.946418
+fixed_pikan    42      1    -0.6049*1 + -0.1310*sin + 0.3173*sqrt 0.967574
+fixed_pikan    42      1    0.0042*x^3 + 0.2184*cos + 0.2176*sqrt 0.903723
+fixed_pikan    42      1    -0.5617*1 + 0.9787*sin + -0.8616*tanh 0.900084
+fixed_pikan    42      1        0.4389*1 + 0.1651*x + -0.4239*sin 0.928388
+fixed_pikan    42      1     -0.2798*x + 0.2791*cos + 0.3544*tanh 0.921394
+fixed_pikan    42      1   0.1247*x^2 + 0.3438*cos + -0.2524*sqrt 0.958767
+fixed_pikan    42      1      0.3238*1 + 0.0363*x^3 + -0.0748*exp 0.904858
+fixed_pikan    42      1  -0.0776*sin + -0.0143*exp + 0.2205*sqrt 0.977545
+fixed_pikan    42      1     -0.4372*x + -0.2537*x^2 + 0.2659*exp 0.925878
+fixed_pikan    42      1      0.2654*1 + 0.0955*x^2 + -0.0158*x^3 0.901744
+fixed_pikan    42      1   0.0688*x^2 + 0.0632*exp + -0.1162*sqrt 0.956077
+fixed_pikan    42      2   0.7807*x + -0.3053*sqrt + -1.4376*tanh 0.924453
+fixed_pikan    42      2    -0.2355*sin + 0.0344*exp + 0.0224*log 0.979890
+fixed_pikan    42      2   0.7697*x + -0.1654*sqrt + -1.2652*tanh 0.908571
+fixed_pikan   456      0     -0.5492*1 + 0.0708*sin + 0.4410*sqrt 0.921174
+fixed_pikan   456      0 0.1872*exp + -0.4701*sqrt + -0.5772*tanh 0.902100
+fixed_pikan   456      0  -0.2105*x^2 + -0.2776*cos + 0.5248*sqrt 0.911778
+fixed_pikan   456      1  0.1110*x^2 + -0.0145*x^3 + -0.1733*sqrt 0.904764
+fixed_pikan   456      1  0.1401*sin + -0.0339*log + -0.0974*sqrt 0.933163
+fixed_pikan   456      1     -0.7127*1 + 0.0399*exp + -0.0153*log 0.923002
+fixed_pikan   456      1      0.2564*x + -0.6114*sin + 0.1382*cos 0.961823
+fixed_pikan   456      1  -0.0473*x^2 + -0.0590*log + 0.4616*sqrt 0.903970
+fixed_pikan   456      1   0.6406*cos + -0.0577*exp + 0.6583*sqrt 0.921270
+fixed_pikan   456      1    0.4761*x + -0.0787*exp + -0.5703*tanh 0.950086
+fixed_pikan   456      1   0.0424*x^3 + -0.4282*cos + -0.0515*exp 0.970970
+fixed_pikan   456      1  -0.1569*x^2 + -0.0493*exp + 0.4650*sqrt 0.931021
+fixed_pikan   456      1      -0.5715*x + 0.3322*cos + 0.2716*exp 0.909887
+fixed_pikan   456      1   0.0984*x^3 + -0.1937*cos + -0.2131*exp 0.907809
+fixed_pikan   456      1    -0.2442*x + 0.2024*sqrt + 0.3973*tanh 0.971656
+fixed_pikan   456      1   0.4722*x^2 + 1.2480*cos + -0.5292*sqrt 0.915435
+fixed_pikan   456      1   -0.1053*sin + 0.5042*cos + 0.7658*sqrt 0.917086
+fixed_pikan   456      1    0.2079*1 + -0.6654*cos + -0.5506*sqrt 0.944077
+fixed_pikan   456      1    0.4929*x + 0.1632*sqrt + -0.9972*tanh 0.969820
+fixed_pikan   456      1     -0.4420*1 + -0.2117*sin + 0.0479*exp 0.935214
+fixed_pikan   456      2       0.7349*1 + 0.0194*x^3 + 0.2858*cos 0.916004
+fixed_pikan   456      2       0.9662*1 + -0.6147*x + 1.0949*tanh 0.972568
+fixed_pikan   456      2      -0.3308*x + 0.7209*cos + 0.2398*exp 0.958123
+fixed_pikan   456      2    1.3763*1 + -0.3479*cos + -0.2330*sqrt 0.907440
+fixed_pikan   456      2     1.0514*1 + 0.0381*x^3 + -0.2258*sqrt 0.971757
+   ra_pikan   123      0   0.0365*x^3 + 2.2338*sin + -2.2872*tanh 0.908999
+   ra_pikan   123      0   0.1455*x^2 + 0.0332*x^3 + -0.2393*sqrt 0.910882
+   ra_pikan   123      0   0.1222*x^3 + -0.3440*exp + 0.6266*sqrt 0.936260
+   ra_pikan   123      0  -0.0082*x^4 + -0.1590*cos + 0.1831*sqrt 0.977271
+   ra_pikan   123      1     -0.2672*1 + 0.0302*x^3 + 0.2687*sqrt 0.934367
+   ra_pikan   123      1      -1.1417*1 + 0.0854*x^2 + 0.1441*sin 0.903459
+   ra_pikan   123      1     -0.6853*1 + -0.1735*sin + 0.1609*cos 0.902479
+   ra_pikan   123      1    -0.2293*sin + 0.2810*cos + 0.0389*exp 0.945339
+   ra_pikan   123      1  0.1448*x^2 + -0.1852*sin + -0.5486*sqrt 0.965042
+   ra_pikan   123      1    -0.1885*1 + 0.1076*exp + -0.2638*tanh 0.932054
+   ra_pikan   123      1     -0.4610*x + 0.1192*exp + 0.7176*tanh 0.947007
+   ra_pikan   123      1   0.0758*x^2 + -0.0568*exp + 0.2489*tanh 0.955689
+   ra_pikan   123      1     0.3035*1 + -1.5714*sin + 1.4366*tanh 0.914704
+   ra_pikan   123      1     -0.0634*1 + 0.3217*sin + -0.0832*exp 0.931625
+   ra_pikan   123      1    -0.0144*x + -0.0943*cos + 0.1183*sqrt 0.980708
+   ra_pikan   123      1    -0.0630*x + 0.1105*x^2 + -0.2284*sqrt 0.949858
+   ra_pikan   123      2   -0.2078*x^3 + -0.0558*x^4 + 0.4057*exp 0.907399
+   ra_pikan    42      0      -0.7012*x + 1.0624*sin + 0.0999*exp 0.960037
+   ra_pikan    42      0    0.3381*x + 0.1360*sqrt + -0.4285*tanh 0.926927
+   ra_pikan    42      0   0.1270*x^2 + 0.0138*x^3 + -0.0499*sqrt 0.935196
+   ra_pikan    42      0    0.0988*x + -0.2641*sin + -0.0494*sqrt 0.974203
+   ra_pikan    42      1   0.0776*x^3 + 2.8894*sin + -3.0967*tanh 0.903040
+   ra_pikan    42      1  0.1811*sin + -0.4609*cos + -0.3373*sqrt 0.947928
+   ra_pikan    42      1   -0.1209*sin + 0.1230*cos + 0.3738*sqrt 0.934737
+   ra_pikan    42      1   0.1496*x^2 + 0.3138*cos + -0.4319*sqrt 0.967026
+   ra_pikan    42      1     0.4969*x + 0.0877*x^2 + -0.9620*tanh 0.951013
+   ra_pikan    42      1    -1.1756*1 + -0.0260*exp + 0.2205*sqrt 0.925257
+   ra_pikan    42      1   0.1077*cos + -0.0732*exp + 0.2582*tanh 0.968176
+   ra_pikan    42      1     0.5600*1 + 0.0225*exp + -0.5123*sqrt 0.943855
+   ra_pikan    42      1   0.0564*x^2 + 0.0222*exp + -0.0840*sqrt 0.914313
+   ra_pikan    42      1    -0.6209*1 + -0.1303*sin + 0.3198*sqrt 0.965485
+   ra_pikan    42      1    -0.5218*1 + 0.9663*sin + -0.8487*tanh 0.904602
+   ra_pikan    42      1        0.5023*1 + 0.1693*x + -0.4325*sin 0.938102
+   ra_pikan    42      1     -0.2792*x + 0.2910*cos + 0.3539*tanh 0.923214
+   ra_pikan    42      1   0.1228*x^2 + 0.3397*cos + -0.2506*sqrt 0.947364
+   ra_pikan    42      1      0.3422*1 + 0.0374*x^3 + -0.0782*exp 0.930818
+   ra_pikan    42      1  -0.0822*sin + -0.0133*exp + 0.1999*sqrt 0.975145
+   ra_pikan    42      1     -0.4328*x + -0.2520*x^2 + 0.2633*exp 0.925746
+   ra_pikan    42      1      0.2705*1 + 0.0955*x^2 + -0.0159*x^3 0.905717
+   ra_pikan    42      1   0.0751*x^2 + 0.0631*exp + -0.1439*sqrt 0.952319
+   ra_pikan    42      2   0.7803*x + -0.3094*sqrt + -1.4377*tanh 0.922421
+   ra_pikan    42      2    -0.2355*sin + 0.0350*exp + 0.0221*log 0.979579
+   ra_pikan    42      2   0.7698*x + -0.1662*sqrt + -1.2641*tanh 0.907411
+   ra_pikan   456      0     -0.5490*1 + 0.0708*sin + 0.4407*sqrt 0.920887
+   ra_pikan   456      0 0.1870*exp + -0.4694*sqrt + -0.5768*tanh 0.904625
+   ra_pikan   456      0  -0.2117*x^2 + -0.2799*cos + 0.5272*sqrt 0.911973
+   ra_pikan   456      1  0.1116*x^2 + -0.0146*x^3 + -0.1744*sqrt 0.905811
+   ra_pikan   456      1  0.1405*sin + -0.0319*log + -0.1032*sqrt 0.933086
+   ra_pikan   456      1     -0.7097*1 + 0.0396*exp + -0.0149*log 0.925623
+   ra_pikan   456      1      0.2576*x + -0.6133*sin + 0.1316*cos 0.960699
+   ra_pikan   456      1  -0.0476*x^2 + -0.0589*log + 0.4628*sqrt 0.904533
+   ra_pikan   456      1   0.6413*cos + -0.0581*exp + 0.6609*sqrt 0.921681
+   ra_pikan   456      1    0.4737*x + -0.0771*exp + -0.5704*tanh 0.949824
+   ra_pikan   456      1   0.0419*x^3 + -0.4262*cos + -0.0504*exp 0.971203
+   ra_pikan   456      1  -0.1552*x^2 + -0.0495*exp + 0.4579*sqrt 0.930843
+   ra_pikan   456      1      -0.5719*x + 0.3323*cos + 0.2717*exp 0.910237
+   ra_pikan   456      1   2.0687*sin + 0.1303*exp + -2.6842*tanh 0.902728
+   ra_pikan   456      1   0.0979*x^3 + -0.1918*cos + -0.2123*exp 0.908769
+   ra_pikan   456      1    -0.2441*x + 0.1964*sqrt + 0.3969*tanh 0.972306
+   ra_pikan   456      1   0.4745*x^2 + 1.2537*cos + -0.5303*sqrt 0.916542
+   ra_pikan   456      1   -0.1052*sin + 0.5048*cos + 0.7654*sqrt 0.916657
+   ra_pikan   456      1    0.2107*1 + -0.6663*cos + -0.5524*sqrt 0.943838
+   ra_pikan   456      1    0.4942*x + 0.1570*sqrt + -0.9989*tanh 0.969940
+   ra_pikan   456      1     -0.4465*1 + -0.2118*sin + 0.0480*exp 0.935081
+   ra_pikan   456      2       0.7358*1 + 0.0193*x^3 + 0.2857*cos 0.917613
+   ra_pikan   456      2       0.9640*1 + -0.6160*x + 1.0982*tanh 0.972659
+   ra_pikan   456      2      -0.3313*x + 0.7219*cos + 0.2404*exp 0.958694
+   ra_pikan   456      2    1.3770*1 + -0.3476*cos + -0.2327*sqrt 0.906739
+   ra_pikan   456      2     1.0521*1 + 0.0380*x^3 + -0.2260*sqrt 0.971474
+  Saved table_symbolic.csv
+  Saved fig_duffing_symbolic.pdf
+
+=== Solution field plots ===
+  Saved fig_solution_burgers_nu0.01.pdf
+  Saved fig_solution_burgers_nu0.005.pdf
+  Saved fig_solution_burgers_nu0.001.pdf
+  Saved fig_solution_ac_eps0.1.pdf
+  Saved fig_solution_ac_eps0.05.pdf
+  Saved fig_solution_adv_diff_Pe100.pdf
+  Saved fig_solution_adv_diff_Pe500.pdf
+
+=== Residual maps ===
+  No residual data for burgers/nu0.01/ra_pikan
+  No residual data for burgers/nu0.01/uniform_pikan
+  No residual data for burgers/nu0.001/ra_pikan
+  No residual data for burgers/nu0.001/uniform_pikan
+  No residual data for adv_diff/Pe100.0/ra_pikan
+  No residual data for adv_diff/Pe100.0/uniform_pikan
+  No residual data for adv_diff/Pe500.0/ra_pikan
+  No residual data for adv_diff/Pe500.0/uniform_pikan
+
+=== Gini evolution ===
+  No Gini history data found; skipping Gini evolution plot.
+
+=== KAN activation functions ===
+  No KAN activation data found; skipping activation plot.
+
+=== Sensitivity analysis ===
+  Saved fig_sensitivity_percentile.pdf
+
+=== Done ===

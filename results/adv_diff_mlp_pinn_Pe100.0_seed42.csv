@@ -1,0 +1,2 @@
+method,Pe,seed,final_l2,n_params,elapsed,peak_bytes
+mlp_pinn,100.0,42,3.0733015537261963,8577,219.50239690000308,58126260

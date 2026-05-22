@@ -1,0 +1,2 @@
+method,eps,seed,final_l2,n_params,elapsed,steps_per_second,peak_bytes
+fixed_bspline_pikan,0.1,1234,0.011101260781288147,910,600.5956815,3.330027273930707,188617

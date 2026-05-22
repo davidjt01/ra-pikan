@@ -1,0 +1,36 @@
+# Environment
+.venv/
+venv/
+env/
+*.egg-info/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Results and large outputs (keep CSV/figures in results/ if small; ignore big checkpoints)
+results/*.pt
+results/*.pth
+results/*.ckpt
+*.npz
+
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

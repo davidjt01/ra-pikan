@@ -1,0 +1,2 @@
+n_params_history,total_elapsed,cycle_times,final_l2,final_n_params,method,Pe,seed,percentile,peak_bytes,n_params,elapsed
+"[910, 1230, 1550, 1870]",529.3316828999959,"[120.13127640000312, 108.53670470000361, 123.58104040000762]",2.7510344982147217,1870,ra_pikan,100.0,42,90.0,1434480,1870,529.3316828999959
