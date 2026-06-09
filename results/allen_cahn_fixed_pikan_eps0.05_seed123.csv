@@ -1,0 +1,2 @@
+method,eps,seed,final_l2,n_params,elapsed,peak_bytes
+fixed_pikan,0.05,123,0.009952202439308167,780,155.60768590000225,110460

@@ -1,0 +1,1346 @@
+Running Burgers benchmark: nu=[0.01, 0.005, 0.001], seeds=[42, 123, 456], methods=['mlp_pinn', 'rad_pinn', 'fixed_pikan', 'uniform_pikan', 'ra_pikan'], device=cpu
+  SKIP (exists): burgers_mlp_pinn_nu0.01_seed42.csv
+  SKIP (exists): burgers_rad_pinn_nu0.01_seed42.csv
+  SKIP (exists): burgers_fixed_pikan_nu0.01_seed42.csv
+  SKIP (exists): burgers_uniform_pikan_nu0.01_seed42.csv
+  SKIP (exists): burgers_ra_pikan_nu0.01_seed42.csv
+  SKIP (exists): burgers_mlp_pinn_nu0.01_seed123.csv
+  SKIP (exists): burgers_rad_pinn_nu0.01_seed123.csv
+  SKIP (exists): burgers_fixed_pikan_nu0.01_seed123.csv
+  SKIP (exists): burgers_uniform_pikan_nu0.01_seed123.csv
+  SKIP (exists): burgers_ra_pikan_nu0.01_seed123.csv
+  SKIP (exists): burgers_mlp_pinn_nu0.01_seed456.csv
+  SKIP (exists): burgers_rad_pinn_nu0.01_seed456.csv
+  SKIP (exists): burgers_fixed_pikan_nu0.01_seed456.csv
+  SKIP (exists): burgers_uniform_pikan_nu0.01_seed456.csv
+  SKIP (exists): burgers_ra_pikan_nu0.01_seed456.csv
+  SKIP (exists): burgers_mlp_pinn_nu0.005_seed42.csv
+  SKIP (exists): burgers_rad_pinn_nu0.005_seed42.csv
+  SKIP (exists): burgers_fixed_pikan_nu0.005_seed42.csv
+  SKIP (exists): burgers_uniform_pikan_nu0.005_seed42.csv
+  SKIP (exists): burgers_ra_pikan_nu0.005_seed42.csv
+  SKIP (exists): burgers_mlp_pinn_nu0.005_seed123.csv
+  SKIP (exists): burgers_rad_pinn_nu0.005_seed123.csv
+  SKIP (exists): burgers_fixed_pikan_nu0.005_seed123.csv
+  SKIP (exists): burgers_uniform_pikan_nu0.005_seed123.csv
+  SKIP (exists): burgers_ra_pikan_nu0.005_seed123.csv
+  SKIP (exists): burgers_mlp_pinn_nu0.005_seed456.csv
+  SKIP (exists): burgers_rad_pinn_nu0.005_seed456.csv
+  SKIP (exists): burgers_fixed_pikan_nu0.005_seed456.csv
+  SKIP (exists): burgers_uniform_pikan_nu0.005_seed456.csv
+  SKIP (exists): burgers_ra_pikan_nu0.005_seed456.csv
+  SKIP (exists): burgers_mlp_pinn_nu0.001_seed42.csv
+  SKIP (exists): burgers_rad_pinn_nu0.001_seed42.csv
+  SKIP (exists): burgers_fixed_pikan_nu0.001_seed42.csv
+  SKIP (exists): burgers_uniform_pikan_nu0.001_seed42.csv
+  SKIP (exists): burgers_ra_pikan_nu0.001_seed42.csv
+  SKIP (exists): burgers_mlp_pinn_nu0.001_seed123.csv
+  SKIP (exists): burgers_rad_pinn_nu0.001_seed123.csv
+  SKIP (exists): burgers_fixed_pikan_nu0.001_seed123.csv
+  SKIP (exists): burgers_uniform_pikan_nu0.001_seed123.csv
+  SKIP (exists): burgers_ra_pikan_nu0.001_seed123.csv
+  SKIP (exists): burgers_mlp_pinn_nu0.001_seed456.csv
+  SKIP (exists): burgers_rad_pinn_nu0.001_seed456.csv
+  SKIP (exists): burgers_fixed_pikan_nu0.001_seed456.csv
+  SKIP (exists): burgers_uniform_pikan_nu0.001_seed456.csv
+  SKIP (exists): burgers_ra_pikan_nu0.001_seed456.csv
+  SKIP (exists): allen_cahn_mlp_pinn_eps0.1_seed42.csv
+  SKIP (exists): allen_cahn_rad_pinn_eps0.1_seed42.csv
+  SKIP (exists): allen_cahn_fixed_pikan_eps0.1_seed42.csv
+  SKIP (exists): allen_cahn_uniform_pikan_eps0.1_seed42.csv
+  SKIP (exists): allen_cahn_ra_pikan_eps0.1_seed42.csv
+  SKIP (exists): allen_cahn_mlp_pinn_eps0.1_seed123.csv
+  SKIP (exists): allen_cahn_rad_pinn_eps0.1_seed123.csv
+  SKIP (exists): allen_cahn_fixed_pikan_eps0.1_seed123.csv
+  SKIP (exists): allen_cahn_uniform_pikan_eps0.1_seed123.csv
+  SKIP (exists): allen_cahn_ra_pikan_eps0.1_seed123.csv
+  SKIP (exists): allen_cahn_mlp_pinn_eps0.1_seed456.csv
+  SKIP (exists): allen_cahn_rad_pinn_eps0.1_seed456.csv
+  SKIP (exists): allen_cahn_fixed_pikan_eps0.1_seed456.csv
+  SKIP (exists): allen_cahn_uniform_pikan_eps0.1_seed456.csv
+  SKIP (exists): allen_cahn_ra_pikan_eps0.1_seed456.csv
+  SKIP (exists): allen_cahn_mlp_pinn_eps0.05_seed42.csv
+  SKIP (exists): allen_cahn_rad_pinn_eps0.05_seed42.csv
+  SKIP (exists): allen_cahn_fixed_pikan_eps0.05_seed42.csv
+  SKIP (exists): allen_cahn_uniform_pikan_eps0.05_seed42.csv
+  SKIP (exists): allen_cahn_ra_pikan_eps0.05_seed42.csv
+  SKIP (exists): allen_cahn_mlp_pinn_eps0.05_seed123.csv
+  SKIP (exists): allen_cahn_rad_pinn_eps0.05_seed123.csv
+  SKIP (exists): allen_cahn_fixed_pikan_eps0.05_seed123.csv
+  SKIP (exists): allen_cahn_uniform_pikan_eps0.05_seed123.csv
+  SKIP (exists): allen_cahn_ra_pikan_eps0.05_seed123.csv
+  SKIP (exists): allen_cahn_mlp_pinn_eps0.05_seed456.csv
+  SKIP (exists): allen_cahn_rad_pinn_eps0.05_seed456.csv
+  SKIP (exists): allen_cahn_fixed_pikan_eps0.05_seed456.csv
+  SKIP (exists): allen_cahn_uniform_pikan_eps0.05_seed456.csv
+  SKIP (exists): allen_cahn_ra_pikan_eps0.05_seed456.csv
+  SKIP (exists): adv_diff_mlp_pinn_Pe100.0_seed42.csv
+  SKIP (exists): adv_diff_rad_pinn_Pe100.0_seed42.csv
+  SKIP (exists): adv_diff_fixed_pikan_Pe100.0_seed42.csv
+  SKIP (exists): adv_diff_uniform_pikan_Pe100.0_seed42.csv
+  SKIP (exists): adv_diff_ra_pikan_Pe100.0_seed42.csv
+  SKIP (exists): adv_diff_mlp_pinn_Pe100.0_seed123.csv
+  SKIP (exists): adv_diff_rad_pinn_Pe100.0_seed123.csv
+  SKIP (exists): adv_diff_fixed_pikan_Pe100.0_seed123.csv
+  SKIP (exists): adv_diff_uniform_pikan_Pe100.0_seed123.csv
+  SKIP (exists): adv_diff_ra_pikan_Pe100.0_seed123.csv
+  SKIP (exists): adv_diff_mlp_pinn_Pe100.0_seed456.csv
+  SKIP (exists): adv_diff_rad_pinn_Pe100.0_seed456.csv
+  SKIP (exists): adv_diff_fixed_pikan_Pe100.0_seed456.csv
+  SKIP (exists): adv_diff_uniform_pikan_Pe100.0_seed456.csv
+  SKIP (exists): adv_diff_ra_pikan_Pe100.0_seed456.csv
+  SKIP (exists): adv_diff_mlp_pinn_Pe500.0_seed42.csv
+  SKIP (exists): adv_diff_rad_pinn_Pe500.0_seed42.csv
+  SKIP (exists): adv_diff_fixed_pikan_Pe500.0_seed42.csv
+  SKIP (exists): adv_diff_uniform_pikan_Pe500.0_seed42.csv
+  SKIP (exists): adv_diff_ra_pikan_Pe500.0_seed42.csv
+  SKIP (exists): adv_diff_mlp_pinn_Pe500.0_seed123.csv
+  SKIP (exists): adv_diff_rad_pinn_Pe500.0_seed123.csv
+  SKIP (exists): adv_diff_fixed_pikan_Pe500.0_seed123.csv
+  SKIP (exists): adv_diff_uniform_pikan_Pe500.0_seed123.csv
+  SKIP (exists): adv_diff_ra_pikan_Pe500.0_seed123.csv
+  SKIP (exists): adv_diff_mlp_pinn_Pe500.0_seed456.csv
+  SKIP (exists): adv_diff_rad_pinn_Pe500.0_seed456.csv
+  SKIP (exists): adv_diff_fixed_pikan_Pe500.0_seed456.csv
+  SKIP (exists): adv_diff_uniform_pikan_Pe500.0_seed456.csv
+  SKIP (exists): adv_diff_ra_pikan_Pe500.0_seed456.csv
+  SKIP (exists): duffing_mlp_pinn_seed42.csv
+
+============================================================
+  Duffing seed=42 method=rad_pinn
+============================================================
+  Saved duffing_rad_pinn_seed42.csv
+  => L2=5.5937e-01
+  SKIP (exists): duffing_fixed_pikan_seed42.csv
+
+============================================================
+  Duffing seed=42 method=uniform_pikan
+============================================================
+  Saved duffing_uniform_pikan_seed42.csv
+  => L2=3.4791e-02
+  SKIP (exists): duffing_ra_pikan_seed42.csv
+  SKIP (exists): duffing_mlp_pinn_seed123.csv
+
+============================================================
+  Duffing seed=123 method=rad_pinn
+============================================================
+  Saved duffing_rad_pinn_seed123.csv
+  => L2=5.3406e-01
+  SKIP (exists): duffing_fixed_pikan_seed123.csv
+
+============================================================
+  Duffing seed=123 method=uniform_pikan
+============================================================
+  Saved duffing_uniform_pikan_seed123.csv
+  => L2=6.1963e-02
+  SKIP (exists): duffing_ra_pikan_seed123.csv
+  SKIP (exists): duffing_mlp_pinn_seed456.csv
+
+============================================================
+  Duffing seed=456 method=rad_pinn
+============================================================
+  Saved duffing_rad_pinn_seed456.csv
+  => L2=5.7877e-01
+  SKIP (exists): duffing_fixed_pikan_seed456.csv
+
+============================================================
+  Duffing seed=456 method=uniform_pikan
+============================================================
+  Saved duffing_uniform_pikan_seed456.csv
+  => L2=2.8294e-01
+  SKIP (exists): duffing_ra_pikan_seed456.csv
+
+============================================================
+  Sensitivity: Pe=100.0  seed=42  percentile=70.0  [1/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.8958e+00
+  Adam 200/500  loss=1.2937e+00
+  Adam 300/500  loss=1.1243e+00
+  Adam 400/500  loss=1.0494e+00
+  Adam 500/500  loss=1.0209e+00
+  After Phase 1: L2=2.9404e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1966
+  Mean|residual|=9.5555e-01  Max=2.9045e+00
+  High-residual regions found: 6
+  After targeted extension: 1870 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=2.3477e+00
+  Adam 200/300  loss=1.4467e+00
+  Adam 300/300  loss=1.0261e+00
+  After cycle 1: L2=2.6678e+00  (75.8s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.4128
+  Mean|residual|=8.2707e-01  Max=1.1008e+01
+  High-residual regions found: 6
+  After targeted extension: 2830 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=5.0547e+01
+  Adam 200/300  loss=1.5950e+01
+  Adam 300/300  loss=8.9865e+00
+  After cycle 2: L2=2.4003e+00  (77.1s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.6429
+  Mean|residual|=2.7952e+00  Max=1.2440e+03
+  High-residual regions found: 6
+  Skipping extension (grid size 23 >= max 20)
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=9.8952e+00
+  Adam 200/300  loss=8.9003e+00
+  Adam 300/300  loss=6.2270e+00
+  After cycle 3: L2=2.4611e+00  (78.1s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed42_p70.csv
+  => L2=2.4611e+00
+
+============================================================
+  Sensitivity: Pe=100.0  seed=123  percentile=70.0  [2/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=2.2190e+00
+  Adam 200/500  loss=1.4842e+00
+  Adam 300/500  loss=1.2237e+00
+  Adam 400/500  loss=1.1052e+00
+  Adam 500/500  loss=1.0482e+00
+  After Phase 1: L2=2.9536e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.2133
+  Mean|residual|=9.4466e-01  Max=2.7566e+00
+  High-residual regions found: 6
+  After targeted extension: 1870 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=6.5574e+01
+  Adam 200/300  loss=2.0750e+01
+  Adam 300/300  loss=1.4093e+01
+  After cycle 1: L2=2.4667e+00  (100.4s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.6600
+  Mean|residual|=1.9849e+00  Max=3.0905e+02
+  High-residual regions found: 6
+  After targeted extension: 2830 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=9.8222e+04
+  Adam 200/300  loss=4.4984e+04
+  Adam 300/300  loss=3.6623e+04
+  After cycle 2: L2=1.4144e+01  (97.5s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.8846
+  Mean|residual|=1.0746e+02  Max=3.5182e+04
+  High-residual regions found: 6
+  Skipping extension (grid size 23 >= max 20)
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=5.9031e+04
+  Adam 200/300  loss=3.7930e+04
+  Adam 300/300  loss=2.7039e+04
+  After cycle 3: L2=1.3483e+01  (91.7s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed123_p70.csv
+  => L2=1.3483e+01
+
+============================================================
+  Sensitivity: Pe=100.0  seed=456  percentile=70.0  [3/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.9150e+00
+  Adam 200/500  loss=1.3401e+00
+  Adam 300/500  loss=1.1845e+00
+  Adam 400/500  loss=1.0662e+00
+  Adam 500/500  loss=1.0162e+00
+  After Phase 1: L2=3.0053e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.2183
+  Mean|residual|=9.3386e-01  Max=2.9904e+00
+  High-residual regions found: 6
+  After targeted extension: 1870 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=2.9565e+00
+  Adam 200/300  loss=1.7662e+00
+  Adam 300/300  loss=1.3518e+00
+  After cycle 1: L2=2.6658e+00  (73.9s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.4480
+  Mean|residual|=8.6855e-01  Max=2.0186e+01
+  High-residual regions found: 6
+  After targeted extension: 2830 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=1.8895e+06
+  Adam 200/300  loss=5.9541e+06
+  Adam 300/300  loss=4.2224e+07
+  After cycle 2: L2=4.1017e+01  (75.2s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.9787
+  Mean|residual|=1.3016e+03  Max=5.2441e+05
+  High-residual regions found: 6
+  Skipping extension (grid size 23 >= max 20)
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=4.6387e+07
+  Adam 200/300  loss=2.1418e+07
+  Adam 300/300  loss=1.5176e+07
+  After cycle 3: L2=4.2084e+01  (77.6s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed456_p70.csv
+  => L2=4.2084e+01
+
+============================================================
+  Sensitivity: Pe=500.0  seed=42  percentile=70.0  [4/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.7634e+00
+  Adam 200/500  loss=1.1760e+00
+  Adam 300/500  loss=1.0514e+00
+  Adam 400/500  loss=9.9661e-01
+  Adam 500/500  loss=9.7280e-01
+  After Phase 1: L2=3.0381e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1604
+  Mean|residual|=9.6341e-01  Max=2.0867e+00
+  High-residual regions found: 6
+  After targeted extension: 1870 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=1.3967e+00
+  Adam 200/300  loss=9.7756e-01
+  Adam 300/300  loss=8.3120e-01
+  After cycle 1: L2=2.7344e+00  (74.3s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.3521
+  Mean|residual|=8.2121e-01  Max=2.0599e+01
+  High-residual regions found: 6
+  After targeted extension: 2830 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=3.5671e+01
+  Adam 200/300  loss=2.5813e+01
+  Adam 300/300  loss=1.8924e+01
+  After cycle 2: L2=2.6467e+00  (74.8s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.6425
+  Mean|residual|=2.2026e+00  Max=2.9986e+02
+  High-residual regions found: 6
+  Skipping extension (grid size 23 >= max 20)
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=1.3320e+01
+  Adam 200/300  loss=8.0614e+00
+  Adam 300/300  loss=5.1646e+00
+  After cycle 3: L2=2.7037e+00  (75.3s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed42_p70.csv
+  => L2=2.7037e+00
+
+============================================================
+  Sensitivity: Pe=500.0  seed=123  percentile=70.0  [5/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.8820e+00
+  Adam 200/500  loss=1.2556e+00
+  Adam 300/500  loss=1.1276e+00
+  Adam 400/500  loss=1.0608e+00
+  Adam 500/500  loss=1.0189e+00
+  After Phase 1: L2=3.0379e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1678
+  Mean|residual|=9.6247e-01  Max=2.1641e+00
+  High-residual regions found: 6
+  After targeted extension: 1870 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=1.8312e+00
+  Adam 200/300  loss=1.2227e+00
+  Adam 300/300  loss=1.0139e+00
+  After cycle 1: L2=2.6693e+00  (79.8s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.3914
+  Mean|residual|=7.9337e-01  Max=7.7808e+00
+  High-residual regions found: 6
+  After targeted extension: 2830 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=3.9641e+00
+  Adam 200/300  loss=2.1358e+00
+  Adam 300/300  loss=1.7171e+00
+  After cycle 2: L2=2.5781e+00  (94.0s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.5518
+  Mean|residual|=1.1255e+00  Max=1.7320e+02
+  High-residual regions found: 6
+  Skipping extension (grid size 23 >= max 20)
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=1.9746e+00
+  Adam 200/300  loss=1.6651e+00
+  Adam 300/300  loss=1.3081e+00
+  After cycle 3: L2=2.6819e+00  (81.3s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed123_p70.csv
+  => L2=2.6819e+00
+
+============================================================
+  Sensitivity: Pe=500.0  seed=456  percentile=70.0  [6/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.5438e+00
+  Adam 200/500  loss=1.1424e+00
+  Adam 300/500  loss=1.0466e+00
+  Adam 400/500  loss=1.0025e+00
+  Adam 500/500  loss=9.8818e-01
+  After Phase 1: L2=3.0663e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1751
+  Mean|residual|=9.5769e-01  Max=2.4470e+00
+  High-residual regions found: 6
+  After targeted extension: 1870 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=1.2466e+03
+  Adam 200/300  loss=7.5769e+02
+  Adam 300/300  loss=5.2734e+02
+  After cycle 1: L2=2.9149e+00  (78.0s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.7556
+  Mean|residual|=7.8249e+00  Max=4.6802e+02
+  High-residual regions found: 6
+  After targeted extension: 2830 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=7.6152e+04
+  Adam 200/300  loss=5.7547e+04
+  Adam 300/300  loss=4.9542e+04
+  After cycle 2: L2=1.0990e+01  (78.5s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.8516
+  Mean|residual|=3.4751e+01  Max=1.1310e+04
+  High-residual regions found: 6
+  Skipping extension (grid size 23 >= max 20)
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=6.3397e+04
+  Adam 200/300  loss=3.2079e+04
+  Adam 300/300  loss=2.3708e+04
+  After cycle 3: L2=1.4830e+01  (80.6s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed456_p70.csv
+  => L2=1.4830e+01
+
+============================================================
+  Sensitivity: Pe=100.0  seed=42  percentile=80.0  [7/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.8958e+00
+  Adam 200/500  loss=1.2937e+00
+  Adam 300/500  loss=1.1243e+00
+  Adam 400/500  loss=1.0494e+00
+  Adam 500/500  loss=1.0209e+00
+  After Phase 1: L2=2.9404e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1966
+  Mean|residual|=9.5555e-01  Max=2.9045e+00
+  High-residual regions found: 4
+  After targeted extension: 1550 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=1.3442e+00
+  Adam 200/300  loss=1.0349e+00
+  Adam 300/300  loss=9.2746e-01
+  After cycle 1: L2=2.6517e+00  (84.8s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.4096
+  Mean|residual|=7.9869e-01  Max=1.5314e+02
+  High-residual regions found: 4
+  After targeted extension: 2190 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=5.6225e+00
+  Adam 200/300  loss=2.3632e+00
+  Adam 300/300  loss=1.3944e+00
+  After cycle 2: L2=2.6530e+00  (76.6s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.5208
+  Mean|residual|=1.0914e+00  Max=1.4262e+02
+  High-residual regions found: 4
+  After targeted extension: 2830 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=1.3958e+01
+  Adam 200/300  loss=1.2531e+01
+  Adam 300/300  loss=1.2142e+01
+  After cycle 3: L2=2.5729e+00  (103.5s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed42_p80.csv
+  => L2=2.5729e+00
+
+============================================================
+  Sensitivity: Pe=100.0  seed=123  percentile=80.0  [8/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=2.2190e+00
+  Adam 200/500  loss=1.4842e+00
+  Adam 300/500  loss=1.2237e+00
+  Adam 400/500  loss=1.1052e+00
+  Adam 500/500  loss=1.0482e+00
+  After Phase 1: L2=2.9536e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.2133
+  Mean|residual|=9.4466e-01  Max=2.7566e+00
+  High-residual regions found: 4
+  After targeted extension: 1550 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=2.5105e+00
+  Adam 200/300  loss=1.5296e+00
+  Adam 300/300  loss=1.2362e+00
+  After cycle 1: L2=2.6515e+00  (80.9s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.4343
+  Mean|residual|=8.2403e-01  Max=1.0045e+02
+  High-residual regions found: 4
+  After targeted extension: 2190 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=1.2470e+02
+  Adam 200/300  loss=5.3086e+01
+  Adam 300/300  loss=3.5797e+01
+  After cycle 2: L2=2.6911e+00  (76.4s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.7923
+  Mean|residual|=3.1950e+00  Max=9.8668e+02
+  High-residual regions found: 4
+  After targeted extension: 2830 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=2.8825e+04
+  Adam 200/300  loss=1.5385e+05
+  Adam 300/300  loss=1.2332e+06
+  After cycle 3: L2=1.2648e+01  (111.2s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed123_p80.csv
+  => L2=1.2648e+01
+
+============================================================
+  Sensitivity: Pe=100.0  seed=456  percentile=80.0  [9/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.9150e+00
+  Adam 200/500  loss=1.3401e+00
+  Adam 300/500  loss=1.1845e+00
+  Adam 400/500  loss=1.0662e+00
+  Adam 500/500  loss=1.0162e+00
+  After Phase 1: L2=3.0053e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.2183
+  Mean|residual|=9.3386e-01  Max=2.9904e+00
+  High-residual regions found: 4
+  After targeted extension: 1550 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=1.0816e+00
+  Adam 200/300  loss=8.4980e-01
+  Adam 300/300  loss=8.1777e-01
+  After cycle 1: L2=2.6471e+00  (117.2s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.3520
+  Mean|residual|=7.1941e-01  Max=4.7099e+00
+  High-residual regions found: 4
+  After targeted extension: 2190 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=7.0580e+02
+  Adam 200/300  loss=3.1848e+02
+  Adam 300/300  loss=2.2273e+02
+  After cycle 2: L2=2.3174e+00  (108.1s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.7387
+  Mean|residual|=9.8812e+00  Max=6.6539e+02
+  High-residual regions found: 4
+  After targeted extension: 2830 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=4.9707e+05
+  Adam 200/300  loss=7.2367e+04
+  Adam 300/300  loss=7.5880e+04
+  After cycle 3: L2=1.9351e+01  (115.2s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed456_p80.csv
+  => L2=1.9351e+01
+
+============================================================
+  Sensitivity: Pe=500.0  seed=42  percentile=80.0  [10/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.7634e+00
+  Adam 200/500  loss=1.1760e+00
+  Adam 300/500  loss=1.0514e+00
+  Adam 400/500  loss=9.9661e-01
+  Adam 500/500  loss=9.7280e-01
+  After Phase 1: L2=3.0381e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1604
+  Mean|residual|=9.6341e-01  Max=2.0867e+00
+  High-residual regions found: 4
+  After targeted extension: 1550 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=4.2005e+01
+  Adam 200/300  loss=1.4340e+01
+  Adam 300/300  loss=7.8859e+00
+  After cycle 1: L2=2.7204e+00  (129.8s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.4621
+  Mean|residual|=9.7821e-01  Max=4.1618e+02
+  High-residual regions found: 4
+  After targeted extension: 2190 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=1.5971e+00
+  Adam 200/300  loss=1.0926e+00
+  Adam 300/300  loss=9.0292e-01
+  After cycle 2: L2=2.7077e+00  (107.5s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.3996
+  Mean|residual|=8.1003e-01  Max=3.3245e+01
+  High-residual regions found: 4
+  After targeted extension: 2830 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=2.7442e+00
+  Adam 200/300  loss=1.5856e+00
+  Adam 300/300  loss=1.3756e+00
+  After cycle 3: L2=2.6731e+00  (113.6s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed42_p80.csv
+  => L2=2.6731e+00
+
+============================================================
+  Sensitivity: Pe=500.0  seed=123  percentile=80.0  [11/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.8820e+00
+  Adam 200/500  loss=1.2556e+00
+  Adam 300/500  loss=1.1276e+00
+  Adam 400/500  loss=1.0608e+00
+  Adam 500/500  loss=1.0189e+00
+  After Phase 1: L2=3.0379e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1678
+  Mean|residual|=9.6247e-01  Max=2.1641e+00
+  High-residual regions found: 4
+  After targeted extension: 1550 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=1.0783e+00
+  Adam 200/300  loss=8.7209e-01
+  Adam 300/300  loss=7.8695e-01
+  After cycle 1: L2=2.6933e+00  (115.9s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.3085
+  Mean|residual|=7.1422e-01  Max=3.7373e+00
+  High-residual regions found: 4
+  After targeted extension: 2190 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=2.6627e+00
+  Adam 200/300  loss=5.0267e+00
+  Adam 300/300  loss=2.2494e+00
+  After cycle 2: L2=2.9966e+00  (109.0s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.5065
+  Mean|residual|=9.7105e-01  Max=1.9606e+02
+  High-residual regions found: 4
+  After targeted extension: 2830 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=1.5250e+06
+  Adam 200/300  loss=5.9135e+05
+  Adam 300/300  loss=3.5727e+05
+  After cycle 3: L2=2.2731e+01  (119.6s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed123_p80.csv
+  => L2=2.2731e+01
+
+============================================================
+  Sensitivity: Pe=500.0  seed=456  percentile=80.0  [12/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.5438e+00
+  Adam 200/500  loss=1.1424e+00
+  Adam 300/500  loss=1.0466e+00
+  Adam 400/500  loss=1.0025e+00
+  Adam 500/500  loss=9.8818e-01
+  After Phase 1: L2=3.0663e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1751
+  Mean|residual|=9.5769e-01  Max=2.4470e+00
+  High-residual regions found: 4
+  After targeted extension: 1550 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=9.4460e-01
+  Adam 200/300  loss=8.0420e-01
+  Adam 300/300  loss=7.5400e-01
+  After cycle 1: L2=2.7523e+00  (118.4s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.3073
+  Mean|residual|=7.3299e-01  Max=6.2289e+00
+  High-residual regions found: 4
+  After targeted extension: 2190 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=1.1594e+08
+  Adam 200/300  loss=9.4030e+07
+  Adam 300/300  loss=7.6246e+07
+  After cycle 2: L2=6.3210e+02  (104.3s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.9104
+  Mean|residual|=1.6401e+03  Max=6.9202e+05
+  High-residual regions found: 4
+  After targeted extension: 2830 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=1.6032e+11
+  Adam 200/300  loss=7.4522e+10
+  Adam 300/300  loss=3.2472e+10
+  After cycle 3: L2=1.2127e+04  (113.9s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed456_p80.csv
+  => L2=1.2127e+04
+
+============================================================
+  Sensitivity: Pe=100.0  seed=42  percentile=90.0  [13/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.8958e+00
+  Adam 200/500  loss=1.2937e+00
+  Adam 300/500  loss=1.1243e+00
+  Adam 400/500  loss=1.0494e+00
+  Adam 500/500  loss=1.0209e+00
+  After Phase 1: L2=2.9404e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1966
+  Mean|residual|=9.5555e-01  Max=2.9045e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=7.9954e-01
+  Adam 200/300  loss=7.8276e-01
+  Adam 300/300  loss=7.4358e-01
+  After cycle 1: L2=2.5944e+00  (120.1s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.2400
+  Mean|residual|=6.9190e-01  Max=1.1945e+01
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=7.3587e-01
+  Adam 200/300  loss=6.0269e-01
+  Adam 300/300  loss=4.1197e-01
+  After cycle 2: L2=2.7738e+00  (108.5s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.3540
+  Mean|residual|=5.7755e-01  Max=1.1217e+02
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=9.5856e-01
+  Adam 200/300  loss=5.7569e-01
+  Adam 300/300  loss=5.8951e-01
+  After cycle 3: L2=2.7510e+00  (123.6s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed42_p90.csv
+  => L2=2.7510e+00
+
+============================================================
+  Sensitivity: Pe=100.0  seed=123  percentile=90.0  [14/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=2.2190e+00
+  Adam 200/500  loss=1.4842e+00
+  Adam 300/500  loss=1.2237e+00
+  Adam 400/500  loss=1.1052e+00
+  Adam 500/500  loss=1.0482e+00
+  After Phase 1: L2=2.9536e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.2133
+  Mean|residual|=9.4466e-01  Max=2.7566e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=8.5883e-01
+  Adam 200/300  loss=7.9677e-01
+  Adam 300/300  loss=7.4047e-01
+  After cycle 1: L2=2.6039e+00  (120.0s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.2498
+  Mean|residual|=6.7930e-01  Max=2.8366e+00
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=8.5861e-01
+  Adam 200/300  loss=7.4698e-01
+  Adam 300/300  loss=6.7904e-01
+  After cycle 2: L2=2.7193e+00  (108.0s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.4204
+  Mean|residual|=7.3664e-01  Max=1.7186e+02
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=3.4279e+03
+  Adam 200/300  loss=9.4627e+03
+  Adam 300/300  loss=1.4879e+03
+  After cycle 3: L2=3.3638e+00  (122.4s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed123_p90.csv
+  => L2=3.3638e+00
+
+============================================================
+  Sensitivity: Pe=100.0  seed=456  percentile=90.0  [15/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.9150e+00
+  Adam 200/500  loss=1.3401e+00
+  Adam 300/500  loss=1.1845e+00
+  Adam 400/500  loss=1.0662e+00
+  Adam 500/500  loss=1.0162e+00
+  After Phase 1: L2=3.0053e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.2183
+  Mean|residual|=9.3386e-01  Max=2.9904e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=7.7138e-01
+  Adam 200/300  loss=7.5095e-01
+  Adam 300/300  loss=7.1669e-01
+  After cycle 1: L2=2.6635e+00  (120.0s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.2239
+  Mean|residual|=6.9126e-01  Max=2.6349e+00
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=6.7965e-01
+  Adam 200/300  loss=4.9090e-01
+  Adam 300/300  loss=3.2329e-01
+  After cycle 2: L2=3.1373e+00  (107.8s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.6110
+  Mean|residual|=7.2670e-01  Max=1.0492e+03
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=1.1142e+01
+  Adam 200/300  loss=3.6308e+00
+  Adam 300/300  loss=3.2117e+00
+  After cycle 3: L2=2.8844e+00  (122.5s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed456_p90.csv
+  => L2=2.8844e+00
+
+============================================================
+  Sensitivity: Pe=500.0  seed=42  percentile=90.0  [16/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.7634e+00
+  Adam 200/500  loss=1.1760e+00
+  Adam 300/500  loss=1.0514e+00
+  Adam 400/500  loss=9.9661e-01
+  Adam 500/500  loss=9.7280e-01
+  After Phase 1: L2=3.0381e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1604
+  Mean|residual|=9.6341e-01  Max=2.0867e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=7.3950e-01
+  Adam 200/300  loss=7.0017e-01
+  Adam 300/300  loss=6.8485e-01
+  After cycle 1: L2=2.6952e+00  (120.0s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.1831
+  Mean|residual|=7.2917e-01  Max=1.0197e+01
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=7.0727e-01
+  Adam 200/300  loss=6.7897e-01
+  Adam 300/300  loss=6.5904e-01
+  After cycle 2: L2=2.7119e+00  (107.4s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.2428
+  Mean|residual|=7.5153e-01  Max=4.4991e+01
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=8.0222e-01
+  Adam 200/300  loss=7.4082e-01
+  Adam 300/300  loss=6.9913e-01
+  After cycle 3: L2=2.7107e+00  (123.0s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed42_p90.csv
+  => L2=2.7107e+00
+
+============================================================
+  Sensitivity: Pe=500.0  seed=123  percentile=90.0  [17/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.8820e+00
+  Adam 200/500  loss=1.2556e+00
+  Adam 300/500  loss=1.1276e+00
+  Adam 400/500  loss=1.0608e+00
+  Adam 500/500  loss=1.0189e+00
+  After Phase 1: L2=3.0379e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1678
+  Mean|residual|=9.6247e-01  Max=2.1641e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=8.0811e-01
+  Adam 200/300  loss=7.4486e-01
+  Adam 300/300  loss=7.2009e-01
+  After cycle 1: L2=2.7056e+00  (118.8s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.2023
+  Mean|residual|=7.1382e-01  Max=4.4720e+00
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=7.4175e-01
+  Adam 200/300  loss=6.4465e-01
+  Adam 300/300  loss=5.7435e-01
+  After cycle 2: L2=2.8445e+00  (107.1s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.3894
+  Mean|residual|=7.6325e-01  Max=1.0796e+02
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=2.4699e+00
+  Adam 200/300  loss=1.7941e+00
+  Adam 300/300  loss=1.6317e+00
+  After cycle 3: L2=2.8209e+00  (122.1s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed123_p90.csv
+  => L2=2.8209e+00
+
+============================================================
+  Sensitivity: Pe=500.0  seed=456  percentile=90.0  [18/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.5438e+00
+  Adam 200/500  loss=1.1424e+00
+  Adam 300/500  loss=1.0466e+00
+  Adam 400/500  loss=1.0025e+00
+  Adam 500/500  loss=9.8818e-01
+  After Phase 1: L2=3.0663e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1751
+  Mean|residual|=9.5769e-01  Max=2.4470e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=7.5477e-01
+  Adam 200/300  loss=7.2040e-01
+  Adam 300/300  loss=7.0307e-01
+  After cycle 1: L2=2.7213e+00  (125.4s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.1867
+  Mean|residual|=7.3203e-01  Max=4.1171e+00
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=7.2269e-01
+  Adam 200/300  loss=6.8946e-01
+  Adam 300/300  loss=6.4440e-01
+  After cycle 2: L2=2.7902e+00  (112.1s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.2876
+  Mean|residual|=7.1376e-01  Max=3.4548e+01
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=7.9979e-01
+  Adam 200/300  loss=7.3429e-01
+  Adam 300/300  loss=6.7635e-01
+  After cycle 3: L2=2.7846e+00  (84.7s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed456_p90.csv
+  => L2=2.7846e+00
+
+============================================================
+  Sensitivity: Pe=100.0  seed=42  percentile=95.0  [19/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.8958e+00
+  Adam 200/500  loss=1.2937e+00
+  Adam 300/500  loss=1.1243e+00
+  Adam 400/500  loss=1.0494e+00
+  Adam 500/500  loss=1.0209e+00
+  After Phase 1: L2=2.9404e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1966
+  Mean|residual|=9.5555e-01  Max=2.9045e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=7.9954e-01
+  Adam 200/300  loss=7.8276e-01
+  Adam 300/300  loss=7.4358e-01
+  After cycle 1: L2=2.5944e+00  (82.1s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.2400
+  Mean|residual|=6.9190e-01  Max=1.1945e+01
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=7.3587e-01
+  Adam 200/300  loss=6.0269e-01
+  Adam 300/300  loss=4.1197e-01
+  After cycle 2: L2=2.7738e+00  (73.5s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.3540
+  Mean|residual|=5.7755e-01  Max=1.1217e+02
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=9.5856e-01
+  Adam 200/300  loss=5.7569e-01
+  Adam 300/300  loss=5.8951e-01
+  After cycle 3: L2=2.7510e+00  (83.8s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed42_p95.csv
+  => L2=2.7510e+00
+
+============================================================
+  Sensitivity: Pe=100.0  seed=123  percentile=95.0  [20/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=2.2190e+00
+  Adam 200/500  loss=1.4842e+00
+  Adam 300/500  loss=1.2237e+00
+  Adam 400/500  loss=1.1052e+00
+  Adam 500/500  loss=1.0482e+00
+  After Phase 1: L2=2.9536e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.2133
+  Mean|residual|=9.4466e-01  Max=2.7566e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=8.5883e-01
+  Adam 200/300  loss=7.9677e-01
+  Adam 300/300  loss=7.4047e-01
+  After cycle 1: L2=2.6039e+00  (82.4s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.2498
+  Mean|residual|=6.7930e-01  Max=2.8366e+00
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=8.5861e-01
+  Adam 200/300  loss=7.4698e-01
+  Adam 300/300  loss=6.7904e-01
+  After cycle 2: L2=2.7193e+00  (73.2s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.4204
+  Mean|residual|=7.3664e-01  Max=1.7186e+02
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=3.4279e+03
+  Adam 200/300  loss=9.4627e+03
+  Adam 300/300  loss=1.4879e+03
+  After cycle 3: L2=3.3638e+00  (84.2s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed123_p95.csv
+  => L2=3.3638e+00
+
+============================================================
+  Sensitivity: Pe=100.0  seed=456  percentile=95.0  [21/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.9150e+00
+  Adam 200/500  loss=1.3401e+00
+  Adam 300/500  loss=1.1845e+00
+  Adam 400/500  loss=1.0662e+00
+  Adam 500/500  loss=1.0162e+00
+  After Phase 1: L2=3.0053e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.2183
+  Mean|residual|=9.3386e-01  Max=2.9904e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=7.7138e-01
+  Adam 200/300  loss=7.5095e-01
+  Adam 300/300  loss=7.1669e-01
+  After cycle 1: L2=2.6635e+00  (81.9s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.2239
+  Mean|residual|=6.9126e-01  Max=2.6349e+00
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=6.7965e-01
+  Adam 200/300  loss=4.9090e-01
+  Adam 300/300  loss=3.2329e-01
+  After cycle 2: L2=3.1373e+00  (73.5s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.6110
+  Mean|residual|=7.2670e-01  Max=1.0492e+03
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=1.1142e+01
+  Adam 200/300  loss=3.6308e+00
+  Adam 300/300  loss=3.2117e+00
+  After cycle 3: L2=2.8844e+00  (84.3s)
+  Saved sensitivity_ra_pikan_Pe100.0_seed456_p95.csv
+  => L2=2.8844e+00
+
+============================================================
+  Sensitivity: Pe=500.0  seed=42  percentile=95.0  [22/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.7634e+00
+  Adam 200/500  loss=1.1760e+00
+  Adam 300/500  loss=1.0514e+00
+  Adam 400/500  loss=9.9661e-01
+  Adam 500/500  loss=9.7280e-01
+  After Phase 1: L2=3.0381e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1604
+  Mean|residual|=9.6341e-01  Max=2.0867e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=7.3950e-01
+  Adam 200/300  loss=7.0017e-01
+  Adam 300/300  loss=6.8485e-01
+  After cycle 1: L2=2.6952e+00  (81.5s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.1831
+  Mean|residual|=7.2917e-01  Max=1.0197e+01
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=7.0727e-01
+  Adam 200/300  loss=6.7897e-01
+  Adam 300/300  loss=6.5904e-01
+  After cycle 2: L2=2.7119e+00  (73.0s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.2428
+  Mean|residual|=7.5153e-01  Max=4.4991e+01
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=8.0222e-01
+  Adam 200/300  loss=7.4082e-01
+  Adam 300/300  loss=6.9913e-01
+  After cycle 3: L2=2.7107e+00  (102.9s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed42_p95.csv
+  => L2=2.7107e+00
+
+============================================================
+  Sensitivity: Pe=500.0  seed=123  percentile=95.0  [23/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.8820e+00
+  Adam 200/500  loss=1.2556e+00
+  Adam 300/500  loss=1.1276e+00
+  Adam 400/500  loss=1.0608e+00
+  Adam 500/500  loss=1.0189e+00
+  After Phase 1: L2=3.0379e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1678
+  Mean|residual|=9.6247e-01  Max=2.1641e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=8.0811e-01
+  Adam 200/300  loss=7.4486e-01
+  Adam 300/300  loss=7.2009e-01
+  After cycle 1: L2=2.7056e+00  (98.3s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.2023
+  Mean|residual|=7.1382e-01  Max=4.4720e+00
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=7.4175e-01
+  Adam 200/300  loss=6.4465e-01
+  Adam 300/300  loss=5.7435e-01
+  After cycle 2: L2=2.8445e+00  (73.6s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.3894
+  Mean|residual|=7.6325e-01  Max=1.0796e+02
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=2.4699e+00
+  Adam 200/300  loss=1.7941e+00
+  Adam 300/300  loss=1.6317e+00
+  After cycle 3: L2=2.8209e+00  (84.9s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed123_p95.csv
+  => L2=2.8209e+00
+
+============================================================
+  Sensitivity: Pe=500.0  seed=456  percentile=95.0  [24/24]
+============================================================
+=== Phase 1: Base training ===
+  Adam 100/500  loss=1.5438e+00
+  Adam 200/500  loss=1.1424e+00
+  Adam 300/500  loss=1.0466e+00
+  Adam 400/500  loss=1.0025e+00
+  Adam 500/500  loss=9.8818e-01
+  After Phase 1: L2=3.0663e+00
+
+=== Cycle 1/3 ===
+  Gini coefficient of residuals: 0.1751
+  Mean|residual|=9.5769e-01  Max=2.4470e+00
+  High-residual regions found: 2
+  After targeted extension: 1230 params
+  Collocation size: 5500
+  Phase 4: Continued training (cycle 1)
+  Adam 100/300  loss=7.5477e-01
+  Adam 200/300  loss=7.2040e-01
+  Adam 300/300  loss=7.0307e-01
+  After cycle 1: L2=2.7213e+00  (81.4s)
+
+=== Cycle 2/3 ===
+  Gini coefficient of residuals: 0.1867
+  Mean|residual|=7.3203e-01  Max=4.1171e+00
+  High-residual regions found: 2
+  After targeted extension: 1550 params
+  Collocation size: 6000
+  Phase 4: Continued training (cycle 2)
+  Adam 100/300  loss=7.2269e-01
+  Adam 200/300  loss=6.8946e-01
+  Adam 300/300  loss=6.4440e-01
+  After cycle 2: L2=2.7902e+00  (74.1s)
+
+=== Cycle 3/3 ===
+  Gini coefficient of residuals: 0.2876
+  Mean|residual|=7.1376e-01  Max=3.4548e+01
+  High-residual regions found: 2
+  After targeted extension: 1870 params
+  Collocation size: 6500
+  Phase 4: Continued training (cycle 3)
+  Adam 100/300  loss=7.9979e-01
+  Adam 200/300  loss=7.3429e-01
+  Adam 300/300  loss=6.7635e-01
+  After cycle 3: L2=2.7846e+00  (84.6s)
+  Saved sensitivity_ra_pikan_Pe500.0_seed456_p95.csv
+  => L2=2.7846e+00
+
+>>> C:\Users\david\General\modules\Individual Dissertation Single Honours\main\pikan-dissertation\.venv\Scripts\python.exe C:\Users\david\General\modules\Individual Dissertation Single Honours\pikan-dissertation\pikan-dissertation\experiments\run_burgers.py --nu 0.01 0.005 0.001 --seeds 42 123 456 --methods mlp_pinn rad_pinn fixed_pikan uniform_pikan ra_pikan --device cpu
+
+
+>>> C:\Users\david\General\modules\Individual Dissertation Single Honours\main\pikan-dissertation\.venv\Scripts\python.exe C:\Users\david\General\modules\Individual Dissertation Single Honours\pikan-dissertation\pikan-dissertation\experiments\run_allen_cahn.py --eps 0.1 0.05 --seeds 42 123 456 --methods mlp_pinn rad_pinn fixed_pikan uniform_pikan ra_pikan --device cpu
+
+
+>>> C:\Users\david\General\modules\Individual Dissertation Single Honours\main\pikan-dissertation\.venv\Scripts\python.exe C:\Users\david\General\modules\Individual Dissertation Single Honours\pikan-dissertation\pikan-dissertation\experiments\run_advection_diffusion.py --Pe 100.0 500.0 --seeds 42 123 456 --methods mlp_pinn rad_pinn fixed_pikan uniform_pikan ra_pikan --device cpu
+
+
+>>> C:\Users\david\General\modules\Individual Dissertation Single Honours\main\pikan-dissertation\.venv\Scripts\python.exe C:\Users\david\General\modules\Individual Dissertation Single Honours\pikan-dissertation\pikan-dissertation\experiments\run_duffing.py --seeds 42 123 456 --methods mlp_pinn rad_pinn fixed_pikan uniform_pikan ra_pikan --device cpu
+
+
+>>> C:\Users\david\General\modules\Individual Dissertation Single Honours\main\pikan-dissertation\.venv\Scripts\python.exe C:\Users\david\General\modules\Individual Dissertation Single Honours\pikan-dissertation\pikan-dissertation\experiments\run_sensitivity.py --device cpu --seeds 42 123 456
+
+
+=== Suite complete ===
+  All benchmarks completed successfully.
+  Run: python experiments/make_figures_and_tables.py
