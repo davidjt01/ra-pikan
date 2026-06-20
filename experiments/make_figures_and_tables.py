@@ -55,7 +55,7 @@ RESULTS_DIR = ROOT / "results"
 
 METHOD_LABELS = {
     "mlp_pinn": "MLP-PINN",
-    "rad_pinn": "RAD-PINN",
+    "rad_pinn": "RAR-D PINN",
     "fixed_pikan": "Fixed ChebyPIKAN",
     "fixed_bspline_pikan": "Fixed B-spline PIKAN",
     "uniform_pikan": "Uniform-ext. PIKAN",
@@ -299,29 +299,50 @@ def plot_convergence(bench_prefix: str, param_str: str, output_name: str) -> Non
     print(f"  Saved {output_name}")
 
 
+BENCH_DISPLAY = {"burgers": "Burgers", "allen_cahn": "Allen-Cahn", "adv_diff": "Adv-Diff"}
+
+
 def plot_l2_vs_cycle(bench_prefix: str, param_str: str, output_name: str) -> None:
+    """Per-seed L2 trajectories (thin) plus the per-seed mean (bold).
+
+    ``param_str`` must not include a seed (e.g. "Pe100.0"); all available seeds
+    are aggregated. A symmetric mean +/- std band is intentionally avoided: on a
+    log axis it is misleading when one seed diverges mid-training, so individual
+    seed trajectories are shown directly.
+    """
     if not HAS_MPL:
         return
+    from collections import defaultdict
     pattern = f"{bench_prefix}_l2history_*_{param_str}*.csv"
     histories = load_history_csv(pattern)
     if not histories:
         return
 
-    fig, ax = plt.subplots(figsize=(5, 4))
+    by_method = defaultdict(list)
     for stem, df in histories.items():
         method = parse_method_from_stem(stem)
-        if method is None or "l2_error" not in df.columns:
+        if method is None or "l2_error" not in df.columns or "cycle" not in df.columns:
             continue
-        ax.semilogy(
-            df["cycle"], df["l2_error"],
-            label=METHOD_LABELS.get(method, method),
-            color=METHOD_COLORS.get(method, None),
-            marker="o", markersize=5,
-        )
+        by_method[method].append(df[["cycle", "l2_error"]])
+    if not by_method:
+        return
 
-    ax.set_xlabel("Refinement Cycle")
+    fig, ax = plt.subplots(figsize=(5.8, 4))
+    n_seeds = 0
+    for method, dfs in by_method.items():
+        n_seeds = max(n_seeds, len(dfs))
+        color = METHOD_COLORS.get(method, None)
+        for d in dfs:
+            ax.plot(d["cycle"], d["l2_error"], color=color, alpha=0.22, lw=1.0, zorder=1)
+        mean = pd.concat(dfs).groupby("cycle")["l2_error"].mean()
+        ax.plot(mean.index, mean.values, color=color, lw=2.3, marker="o", ms=5,
+                zorder=3, label=METHOD_LABELS.get(method, method) + " (mean)")
+
+    ax.set_yscale("log")
+    ax.set_xlabel("Training phase")
     ax.set_ylabel("Relative L² Error")
-    ax.set_title(f"L2 Error vs Cycle: {bench_prefix} ({param_str})")
+    disp = BENCH_DISPLAY.get(bench_prefix, bench_prefix)
+    ax.set_title(f"L² error per phase: {disp} ({param_str}), {n_seeds} seeds")
     ax.legend(fontsize=8)
     ax.grid(True, which="both", alpha=0.3)
     fig.tight_layout()
@@ -561,37 +582,42 @@ def plot_gini_evolution(output_name: str = "fig_gini_evolution.pdf") -> None:
     if not HAS_MPL:
         return
 
+    # Glob patterns (all seeds aggregated). Adv-diff is shown at Pe=500 to match
+    # the Gini values quoted in the Results text.
     configs = [
-        ("burgers_ginihistory_ra_pikan_nu0.01_seed42.csv", "Burgers ν=0.01 RA", "#d62728"),
-        ("burgers_ginihistory_uniform_pikan_nu0.01_seed42.csv", "Burgers ν=0.01 Uni", "#9467bd"),
-        ("allen_cahn_ginihistory_ra_pikan_eps0.1_seed42.csv", "Allen-Cahn ε=0.1 RA", "#2ca02c"),
-        ("allen_cahn_ginihistory_uniform_pikan_eps0.1_seed42.csv", "Allen-Cahn ε=0.1 Uni", "#bcbd22"),
-        ("adv_diff_ginihistory_ra_pikan_Pe100.0_seed42.csv", "Adv-Diff Pe=100 RA", "#1f77b4"),
-        ("adv_diff_ginihistory_uniform_pikan_Pe100.0_seed42.csv", "Adv-Diff Pe=100 Uni", "#aec7e8"),
+        ("burgers_ginihistory_ra_pikan_nu0.01_seed*.csv", "Burgers ν=0.01 RA", "#d62728", "-"),
+        ("burgers_ginihistory_uniform_pikan_nu0.01_seed*.csv", "Burgers ν=0.01 Uni", "#9467bd", "--"),
+        ("allen_cahn_ginihistory_ra_pikan_eps0.1_seed*.csv", "Allen-Cahn ε=0.1 RA", "#2ca02c", "-"),
+        ("allen_cahn_ginihistory_uniform_pikan_eps0.1_seed*.csv", "Allen-Cahn ε=0.1 Uni", "#bcbd22", "--"),
+        ("adv_diff_ginihistory_ra_pikan_Pe500.0_seed*.csv", "Adv-Diff Pe=500 RA", "#1f77b4", "-"),
+        ("adv_diff_ginihistory_uniform_pikan_Pe500.0_seed*.csv", "Adv-Diff Pe=500 Uni", "#aec7e8", "--"),
     ]
 
     fig, ax = plt.subplots(figsize=(7, 4))
     any_data = False
-    for pattern, label, color in configs:
+    for pattern, label, color, ls in configs:
         files = list(RESULTS_DIR.glob(pattern))
         if not files:
             continue
-        df = pd.read_csv(files[0])
-        if "cycle" in df and "gini" in df:
-            ax.plot(df["cycle"], df["gini"], marker="o", markersize=5,
-                    label=label, color=color,
-                    linestyle="-" if "RA" in label else "--")
-            any_data = True
+        dfs = [pd.read_csv(f)[["cycle", "gini"]] for f in files]
+        g = pd.concat(dfs).groupby("cycle")["gini"]
+        mean, std = g.mean(), g.std(ddof=1).fillna(0.0)
+        x = mean.index.values - mean.index.min()   # 0-index cycles to match the text.
+        ax.fill_between(x, (mean - std).values, (mean + std).values, color=color, alpha=0.15)
+        ax.plot(x, mean.values, marker="o", markersize=5, label=label, color=color,
+                linestyle=ls, lw=1.6)
+        any_data = True
 
     if not any_data:
         print("  No Gini history data found; skipping Gini evolution plot.")
         plt.close(fig)
         return
 
+    ax.set_xticks([0, 1, 2])
     ax.set_xlabel("Refinement Cycle")
     ax.set_ylabel("Gini Coefficient")
     ax.set_title("Residual Concentration (Gini) vs Refinement Cycle")
-    ax.legend(fontsize=7, ncol=2)
+    ax.legend(fontsize=7, ncol=3)
     ax.grid(True, alpha=0.3)
     ax.set_ylim(0.0, 1.0)
     fig.tight_layout()
@@ -748,19 +774,19 @@ def main():
     for nu in ["0.01", "0.005", "0.001"]:
         plot_convergence("burgers", f"nu{nu}_seed42",
                          f"fig_convergence_burgers_nu{nu}.pdf")
-        plot_l2_vs_cycle("burgers", f"nu{nu}_seed42",
+        plot_l2_vs_cycle("burgers", f"nu{nu}",
                          f"fig_l2cycle_burgers_nu{nu}.pdf")
 
     for eps in ["0.1", "0.05"]:
         plot_convergence("allen_cahn", f"eps{eps}_seed42",
                          f"fig_convergence_ac_eps{eps}.pdf")
-        plot_l2_vs_cycle("allen_cahn", f"eps{eps}_seed42",
+        plot_l2_vs_cycle("allen_cahn", f"eps{eps}",
                          f"fig_l2cycle_ac_eps{eps}.pdf")
 
     for Pe in ["100.0", "500.0"]:
         plot_convergence("adv_diff", f"Pe{Pe}_seed42",
                          f"fig_convergence_ad_Pe{Pe}.pdf")
-        plot_l2_vs_cycle("adv_diff", f"Pe{Pe}_seed42",
+        plot_l2_vs_cycle("adv_diff", f"Pe{Pe}",
                          f"fig_l2cycle_ad_Pe{Pe}.pdf")
 
     print("\n=== Bar charts ===")
