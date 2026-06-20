@@ -6,8 +6,10 @@ Usage:
 
 --quick reduces problem sizes for a fast smoke-test.
 
-Full suite (4 benchmarks × 6 methods × 5 seeds + Adv-Diff 10 seeds) takes ~250-400
-hours on CPU.  Use --quick for a 15-30 minute test run.
+Full suite (4 benchmarks × 6 methods × 10 seeds) takes many hours on CPU.  Runs are
+resumable: each (method, seed) result is skipped if its CSV already exists, so
+re-invoking only fills in missing seeds without re-running or overwriting existing
+results.  Use --quick for a 15-30 minute test run.
 """
 
 from __future__ import annotations
@@ -32,7 +34,8 @@ def run_script(script: str, extra_args: list) -> int:
 def main():
     parser = argparse.ArgumentParser(description="Run full PIKAN experiment suite")
     parser.add_argument("--device", type=str, default="cpu")
-    parser.add_argument("--seeds", type=int, nargs="+", default=[42, 123, 456, 789, 1234])
+    parser.add_argument("--seeds", type=int, nargs="+",
+                        default=[42, 123, 456, 789, 1234, 2024, 3141, 4096, 5678, 6789])
     parser.add_argument("--quick", action="store_true",
                         help="Quick smoke-test (1 seed, smallest nu/eps/Pe, fewer steps)")
     args = parser.parse_args()
@@ -74,12 +77,9 @@ def main():
     if rc != 0:
         errors.append("run_allen_cahn.py failed")
 
-    adv_diff_seeds = seeds_str if args.quick else [
-        str(s) for s in [42, 123, 456, 789, 1234, 2024, 3141, 4096, 5678, 6789]
-    ]
     rc = run_script("run_advection_diffusion.py", [
         "--Pe"] + ad_pe + [
-        "--seeds"] + adv_diff_seeds + [
+        "--seeds"] + seeds_str + [
         "--methods"] + methods + [
         "--device", device,
     ])
