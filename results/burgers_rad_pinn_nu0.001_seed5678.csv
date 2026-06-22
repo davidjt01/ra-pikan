@@ -1,0 +1,2 @@
+method,nu,seed,final_l2,n_params,elapsed,peak_bytes
+rad_pinn,0.001,5678,0.3672819137573242,8577,25.83253529999638,116883

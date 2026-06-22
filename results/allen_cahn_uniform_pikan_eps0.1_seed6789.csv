@@ -1,0 +1,2 @@
+n_params_history,total_elapsed,final_l2,final_n_params,method,eps,seed,peak_bytes,n_params,elapsed
+"[910, 1820, 2730, 2730]",427.49965220002923,0.0004777649010065943,2730,uniform_pikan,0.1,6789,1363325,2730,427.49965220002923
